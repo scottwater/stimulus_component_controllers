@@ -105,6 +105,7 @@ GEM
     devpack (0.4.2)
     diff-lcs (1.5.1)
     drb (2.2.1)
+    dry-initializer (3.1.1)
     e2mmap (0.1.0)
     erubi (1.12.0)
     globalid (1.2.1)
@@ -137,6 +138,7 @@ GEM
       net-smtp
     marcel (1.0.4)
     matrix (0.4.2)
+    method_source (1.1.0)
     mini_mime (1.1.5)
     minitest (5.23.1)
     msgpack (1.7.2)
@@ -255,6 +257,7 @@ GEM
     ruby-lsp-rails (0.3.6)
       ruby-lsp (>= 0.16.5, < 0.17.0)
       sorbet-runtime (>= 0.5.9897)
+    ruby-next-core (1.0.3)
     ruby-progressbar (1.13.0)
     rubyzip (2.3.2)
     selenium-webdriver (4.21.1)
@@ -323,6 +326,13 @@ GEM
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.5.0)
+    view_component (3.12.1)
+      activesupport (>= 5.2.0, < 8.0)
+      concurrent-ruby (~> 1.0)
+      method_source (~> 1.0)
+    view_component-contrib (0.2.2)
+      ruby-next-core (>= 0.15.0)
+      view_component
     web-console (4.2.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -351,6 +361,7 @@ DEPENDENCIES
   capybara
   debug
   devpack
+  dry-initializer (~> 3.1)
   importmap-rails
   propshaft
   puma (>= 5.0)
@@ -366,6 +377,8 @@ DEPENDENCIES
   tailwindcss-rails
   turbo-rails
   tzinfo-data
+  view_component (~> 3.12)
+  view_component-contrib
   web-console
 
 RUBY VERSION
